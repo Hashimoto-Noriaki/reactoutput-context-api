@@ -1,5 +1,5 @@
 import React from 'react';
-import useTodo from '../../../hooks/useTodo'; // カスタムフックをインポート
+import useTodo from '../../../hooks/useTodo';
 import TodoForm from '../../organisms/TodoForm';
 import TodoList from '../../organisms/TodoList';
 import Input from '../../atoms/Input';
@@ -12,7 +12,7 @@ const TodoPage: React.FC = () => {
     addTodo,
     deleteTodo,
     handleSearchChange,
-  } = useTodo();
+  } =  useTodo();
 
   return (
     <div className={styles.todoPage}>

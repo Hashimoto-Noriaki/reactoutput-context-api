@@ -1,11 +1,12 @@
 import React from 'react';
+import { TodoProvider } from './contexts/TodoContext';
 import TodoPage from './components/templates/TodoPage';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <TodoProvider>
       <TodoPage />
-    </div>
+    </TodoProvider>
   );
 };
 
